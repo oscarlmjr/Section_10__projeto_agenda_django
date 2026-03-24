@@ -10,6 +10,12 @@ from django.utils import timezone
 # owner (foreign key)
 
 
+class Category(models.Model):
+	name = models.CharField(max_length=50)
+
+	def __str__(self):
+		return self.name
+
 
 class Contact(models.Model):
 	first_name = models.CharField(max_length=50)
@@ -20,6 +26,8 @@ class Contact(models.Model):
 	description = models.TextField(blank=True)
 	show = models.BooleanField(default=True)
 	picture = models.ImageField(blank=True, upload_to='pictures/%Y/%m')
-
-	def __str__(self):
-		return f'{self.first_name} {self.last_name}'
+	category = models.ForeignKey(
+		Category, 
+		on_delete=models.SET_NULL,
+		blank=True, null=True,
+	)

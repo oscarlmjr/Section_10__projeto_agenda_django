@@ -1,0 +1,23 @@
+{
+    "editor.minimap.enabled": false,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "OM Theme (No Italic)",
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": false,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "[html]": {
+        
+        "editor.suggest.insertMode": "replace"
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "html": "html",
+    }
+}

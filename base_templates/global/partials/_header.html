@@ -1,6 +1,6 @@
 	<header class="header">
 		<h1 class="header-heading">
-			<a href="{% url "contact:index" %}" class="header-link">
+			<a href="{% url 'contact:index' %}" class="header-link">
 				Agenda
 			</a>
 		</h1>
@@ -19,10 +19,11 @@
 			</ul>
 		</nav>
 
+
 		<div class="search">
 			<form 
-			action="" 
-			method="get"
+			action="{% url 'contact:search' %}" 
+			method="GET"
 			>
 				<input 
 				type="search" 

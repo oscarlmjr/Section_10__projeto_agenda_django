@@ -3,12 +3,13 @@
     "files.autoSave": "afterDelay",
     "workbench.colorTheme": "OM Theme (No Italic)",
     "editor.renderWhitespace": "all",
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "breadcrumbs.enabled": false,
     "editor.stickyScroll.enabled": false,
     "[html]": {
-        
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
         "editor.suggest.insertMode": "replace"
     },
     "hediet.vscode-drawio.resizeImages": null,
